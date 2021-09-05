@@ -39,6 +39,10 @@ gdjs.New_32scene2Code.GDNewObject2Objects1= [];
 gdjs.New_32scene2Code.GDNewObject2Objects2= [];
 gdjs.New_32scene2Code.GDNewObject2Objects3= [];
 gdjs.New_32scene2Code.GDNewObject2Objects4= [];
+gdjs.New_32scene2Code.GDNewObject3Objects1= [];
+gdjs.New_32scene2Code.GDNewObject3Objects2= [];
+gdjs.New_32scene2Code.GDNewObject3Objects3= [];
+gdjs.New_32scene2Code.GDNewObject3Objects4= [];
 
 gdjs.New_32scene2Code.conditionTrue_0 = {val:false};
 gdjs.New_32scene2Code.condition0IsTrue_0 = {val:false};
@@ -190,7 +194,7 @@ if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
 }
 
 
-};gdjs.New_32scene2Code.eventsList4 = function(runtimeScene) {
+};gdjs.New_32scene2Code.mapOfGDgdjs_46New_9532scene2Code_46GDMissileObjects1Objects = Hashtable.newFrom({"Missile": gdjs.New_32scene2Code.GDMissileObjects1});gdjs.New_32scene2Code.mapOfGDgdjs_46New_9532scene2Code_46GDSlimeWalkObjects1Objects = Hashtable.newFrom({"SlimeWalk": gdjs.New_32scene2Code.GDSlimeWalkObjects1});gdjs.New_32scene2Code.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -201,6 +205,7 @@ gdjs.copyArray(runtimeScene.getObjects("Missile"), gdjs.New_32scene2Code.GDMissi
     gdjs.New_32scene2Code.GDMissileObjects1[i].addPolarForce((gdjs.New_32scene2Code.GDMissileObjects1[i].getDirectionOrAngle()), 100, 0);
 }
 }{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.New_32scene2Code.GDMissileObjects1.length !== 0 ? gdjs.New_32scene2Code.GDMissileObjects1[0] : null), true, "", 0);
+}{runtimeScene.getVariables().get("PRESSIONADO").setNumber(0);
 }}
 
 }
@@ -399,6 +404,51 @@ gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableN
 }
 
 
+{
+
+
+gdjs.New_32scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-cyber-factory-short.wav", 0, true, 20, 1);
+}}
+
+}
+
+
+{
+
+
+gdjs.New_32scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
+{gdjs.evtTools.window.setGameResolutionResizeMode(runtimeScene, "");
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Missile"), gdjs.New_32scene2Code.GDMissileObjects1);
+gdjs.copyArray(runtimeScene.getObjects("SlimeWalk"), gdjs.New_32scene2Code.GDSlimeWalkObjects1);
+
+gdjs.New_32scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.New_32scene2Code.mapOfGDgdjs_46New_9532scene2Code_46GDMissileObjects1Objects, gdjs.New_32scene2Code.mapOfGDgdjs_46New_9532scene2Code_46GDSlimeWalkObjects1Objects, false, runtimeScene, false);
+}if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
+/* Reuse gdjs.New_32scene2Code.GDMissileObjects1 */
+{for(var i = 0, len = gdjs.New_32scene2Code.GDMissileObjects1.length ;i < len;++i) {
+    gdjs.New_32scene2Code.GDMissileObjects1[i].deleteFromScene(runtimeScene);
+}
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Game Over", false);
+}}
+
+}
+
+
 };
 
 gdjs.New_32scene2Code.func = function(runtimeScene) {
@@ -444,6 +494,10 @@ gdjs.New_32scene2Code.GDNewObject2Objects1.length = 0;
 gdjs.New_32scene2Code.GDNewObject2Objects2.length = 0;
 gdjs.New_32scene2Code.GDNewObject2Objects3.length = 0;
 gdjs.New_32scene2Code.GDNewObject2Objects4.length = 0;
+gdjs.New_32scene2Code.GDNewObject3Objects1.length = 0;
+gdjs.New_32scene2Code.GDNewObject3Objects2.length = 0;
+gdjs.New_32scene2Code.GDNewObject3Objects3.length = 0;
+gdjs.New_32scene2Code.GDNewObject3Objects4.length = 0;
 
 gdjs.New_32scene2Code.eventsList4(runtimeScene);
 return;

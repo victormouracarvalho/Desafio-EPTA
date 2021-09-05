@@ -70,6 +70,19 @@ gdjs.Demonstra_231_227o_32AEBCode.eventsList0(runtimeScene);} //End of subevents
 {
 
 
+gdjs.Demonstra_231_227o_32AEBCode.condition0IsTrue_0.val = false;
+{
+gdjs.Demonstra_231_227o_32AEBCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.Demonstra_231_227o_32AEBCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-lone-wolf-short.wav", 0, true, 20, 1);
+}}
+
+}
+
+
+{
+
+
 {
 }
 

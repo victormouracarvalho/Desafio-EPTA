@@ -121,15 +121,6 @@ gdjs.Pause_32MenuCode.eventsList1(runtimeScene);} //End of subevents
 }
 
 
-{
-
-
-{
-}
-
-}
-
-
 };
 
 gdjs.Pause_32MenuCode.func = function(runtimeScene) {
