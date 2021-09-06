@@ -163,19 +163,6 @@ gdjs.Start_32MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObjec
 }
 
 
-{
-
-
-gdjs.Start_32MenuCode.condition0IsTrue_0.val = false;
-{
-gdjs.Start_32MenuCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.Start_32MenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.window.setGameResolutionResizeMode(runtimeScene, "");
-}}
-
-}
-
-
 };
 
 gdjs.Start_32MenuCode.func = function(runtimeScene) {

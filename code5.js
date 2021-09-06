@@ -110,7 +110,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
 {
 gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "UC3CKCR-game-over-a.mp3", 0, true, 20, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "UC3CKCR-game-over-a.mp3", 0, false, 5, 1);
 }}
 
 }

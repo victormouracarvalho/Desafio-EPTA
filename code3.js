@@ -90,7 +90,7 @@ gdjs.Demonstra_231_227o_32EPTACode.condition0IsTrue_0.val = false;
 {
 gdjs.Demonstra_231_227o_32EPTACode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.Demonstra_231_227o_32EPTACode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-test-your-skills-short2.wav", 0, true, 20, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-test-your-skills-short2.wav", 0, true, 3, 1);
 }}
 
 }

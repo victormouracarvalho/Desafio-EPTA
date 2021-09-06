@@ -411,7 +411,7 @@ gdjs.New_32scene2Code.condition0IsTrue_0.val = false;
 {
 gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-cyber-factory-short.wav", 0, true, 20, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "POL-cyber-factory-short.wav", 0, true, 3, 1);
 }}
 
 }
